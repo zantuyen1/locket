@@ -1,87 +1,99 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"> 
-<plist version="1.0"> 
-<dict> 
-    <key>PayloadContent</key> 
-    <array> 
-        <dict> 
-            <key>DNSSettings</key> 
-            <dict> 
-                <key>DNSProtocol</key> 
-                <string>HTTPS</string> 
-                <key>ServerAddresses</key> 
-                <array> 
-                    <string>1.1.1.1</string> 
-                    <string>1.0.0.1</string> 
-                </array> 
-                <key>ServerURL</key> 
-                <string>https://api.p12.vn/dns-query</string> 
-                 
-                <key>SupplementalMatchDomains</key> 
-                <array> 
-                    <string>certs.apple.com</string> 
-                    <string>crl.apple.com</string> 
-                    <string>ocsp.apple.com</string> 
-                    <string>ocsp2.apple.com</string> 
-                    <string>valid.apple.com</string> 
-                    <string>crl3.digicert.com</string> 
-                    <string>crl4.digicert.com</string> 
-                    <string>ocsp.digicert.cn</string> 
-                    <string>ocsp.digicert.com</string> 
-                     
-                    <string>api.revenuecat.com</string> 
-                    <string>app.revenuecat.com</string> 
-                    <string>in.appcenter.ms</string> 
-                    <string>app-measurement.com</string> 
-                    <string>firebaselogging-pa.googleapis.com</string> 
-                    <string>mixpanel.com</string> 
-                    <string>api.mixpanel.com</string> 
-                </array> 
-            </dict> 
-            <key>OnDemandRules</key> 
-            <array> 
-                <dict> 
-                    <key>Action</key> 
-                    <string>Connect</string> 
-                    <key>InterfaceTypeMatch</key> 
-                    <string>WiFi</string> 
-                </dict> 
-                <dict> 
-                    <key>Action</key> 
-                    <string>Connect</string> 
-                    <key>InterfaceTypeMatch</key> 
-                    <string>Cellular</string> 
-                </dict> 
-            </array> 
-            <key>PayloadDescription</key> 
-            <string>Configures device to use Locket VIP Freeze DNS</string> 
-            <key>PayloadDisplayName</key> 
-            <string>P12.VN Locket VIP Server</string> 
-            <key>PayloadIdentifier</key> 
-            <string>com.apple.dnsSettings.managed.locketvip</string> 
-            <key>PayloadType</key> 
-            <string>com.apple.dnsSettings.managed</string> 
-            <key>PayloadUUID</key> 
-            <string>C3D4E5F6-7890-1234-5678-90ABCDEF1234</string> 
-            <key>PayloadVersion</key> 
-            <integer>1</integer> 
-        </dict> 
-    </array> 
-    <key>PayloadDescription</key> 
-    <string>chặn thu hồi lóc kẹt.</string> 
-    <key>PayloadDisplayName</key> 
-    <string>Locket by dvt</string> 
-    <key>PayloadIdentifier</key> 
-    <string>com.p12.locket.vip</string> 
-    <key>PayloadOrganization</key> 
-    <string>Locket by dvt</string> 
-    <key>PayloadRemovalDisallowed</key> 
-    <false/> 
-    <key>PayloadType</key> 
-    <string>Configuration</string> 
-    <key>PayloadUUID</key> 
-    <string>21098765-4321-DCBA-0F12-4567890ABCDE</string> 
-    <key>PayloadVersion</key> 
-    <integer>1</integer> 
-</dict> 
+<?xml version='1.0' encoding='utf-8'?>
+<plist version="1.0">
+  <dict>
+
+    <key>PayloadDisplayName</key>
+    <string>Locket Gold 💛</string>
+
+    <key>PayloadDescription</key>
+    <string>Cấu hình chặn locket cụa dvt hehe</string>
+
+    <key>PayloadIdentifier</key>
+    <string>io.nextdns.d8f9fe.profile</string>
+
+    <key>PayloadScope</key>
+    <string>System</string>
+
+    <key>PayloadType</key>
+    <string>Configuration</string>
+
+    <key>PayloadUUID</key>
+    <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.d8f9fe</string>
+
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+
+    <key>PayloadContent</key>
+    <array>
+      <dict>
+
+        <key>DNSSettings</key>
+        <dict>
+          <key>DNSProtocol</key>
+          <string>HTTPS</string>
+
+          <key>ServerURL</key>
+          <string>https://my.ublockdns.com/z451ak95</string>
+        </dict>
+
+        <key>OnDemandRules</key>
+        <array>
+
+          <dict>
+            <key>Action</key>
+            <string>EvaluateConnection</string>
+
+            <key>ActionParameters</key>
+            <array>
+              <dict>
+                <key>DomainAction</key>
+                <string>NeverConnect</string>
+
+                <key>Domains</key>
+                <array>
+                  <string>captive.apple.com</string>
+                  <string>3gppnetwork.org</string>
+                  <string>dav.orange.fr</string>
+                  <string>vvm.mobistar.be</string>
+                  <string>vvm.mstore.msg.t-mobile.com</string>
+                  <string>tma.vvm.mone.pan-net.eu</string>
+                  <string>vvm.ee.co.uk</string>
+                </array>
+
+              </dict>
+            </array>
+          </dict>
+
+          <dict>
+            <key>Action</key>
+            <string>Connect</string>
+          </dict>
+
+        </array>
+
+        <key>PayloadType</key>
+        <string>com.apple.dnsSettings.managed</string>
+
+        <key>PayloadIdentifier</key>
+        <string>io.nextdns.d8f9fe.profile.dnsSettings.managed</string>
+
+        <key>PayloadUUID</key>
+        <string>A1E2F262-DB73-40F6-BD22-2E42A43A3C94.d8f9fe.dnsSettings.managed</string>
+
+        <key>PayloadDisplayName</key>
+        <string>Locket Gold DNS</string>
+
+        <key>PayloadOrganization</key>
+        <string></string>
+
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+
+      </dict>
+    </array>
+
+    <key>PayloadOrganization</key>
+    <string>dvt</string>
+
+  </dict>
 </plist>
